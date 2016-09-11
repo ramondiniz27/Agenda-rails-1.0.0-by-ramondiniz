@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+<div class="titulo"><h1>Contatos</h1></div>
+<div class="pesquisa">
+    <%= form_tag resultado_path, :method =>'post' do %>
+    <%= text_field_tag :query, params[:query]%>
+    <%= submit_tag "Procurar", :nome => nil %>
+    <%end%>
+</div>
+<div class="tabela">
+<table cellspacing="0">
+    <div class="bgti"</div>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Telefone</th>
+      <th>Endereco</th>
+      <th>Detalhes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+</div>
+</div>
+  <tbody>
+    <% @contatos.each do |contato| %>
+      <tr>
+        <td><%= contato.nome %></td>
+        <td><%= contato.email %></td>
+        <td><%= contato.telefone %></td>
+        <td><%= contato.endereco %></td>
+        <td><%= contato.detalhes %></td>
+        <td><%= link_to 'Exibir', contato %></td>
+        <td><%= link_to 'Alterar', edit_contato_path(contato) %></td>
+        <td><%= link_to 'Excluir', contato, method: :delete, data: { confirm: 'Esta certo disso?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo Contato', new_contato_path %>

@@ -1,0 +1,123 @@
+
+div.titulo{
+  margin-top: 55px;
+  margin-left: 50px;
+}
+div.pesquisa {
+  margin-left:620px;
+  margin-top: -40px;
+
+}
+div.bgti{
+  width: 300px;
+  background-color: #c0c0c0;
+}
+div.tabela{
+  position: relative;
+  margin-top: 35px;
+  margin-left: 50px;
+}
+body {
+  background-image: url(fundo.jpg);
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+  background-repeat: repeat-x;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+
+  &:visited {
+    color: #666;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+div.estilot{
+  background-color:#c0c0c0;
+}
+div.field textarea{
+  position: relative;
+  width: 271px;
+  height: 117px;
+}
+th {
+  background-repeat: repeat-x;
+  border: none;
+  background-color: #c0c0c0;
+  position: relative;
+  padding-bottom: 5px;
+
+}
+
+td {
+
+  padding-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 8px;
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+label {
+  display: block;
+}
